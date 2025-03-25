@@ -1,0 +1,231 @@
+Assignment 2 
+
+
+1. Phishing
+ 2. Spear-phishing
+ 3. Vishing
+ 4. Smishing
+ 5. Quishing
+ 6. Shoulder Surfing
+ 7. Tailgating
+ 8. Piggybacking
+ 9. Dumpster Diving
+ 10. Impersonation
+ 11. Whaling
+ 12. Quid Pro Quo
+ 13. Baiting
+ 14. Hoax
+ 15. Pretexting
+ 16. Honeytrap
+
+  1. Phishing :- It is a deceptive practice in which attacker create a fake email, website or send messages which look genuine through which they steal sensitive information, passwords, login details and financial details.  
+
+  2. Spear- Phishing - It is a type of phishing in which a specific person or organisation is a target. Eg Sending fake emails to CEO or employee of the company.
+
+  3.  Vishing :- Voice phishing. In this information is collected by making fake phone calls or voice messages. Eg Calling as fake bank representative.
+
+  4. Simishing:- Phishing through SMS.  In this attack attacker send  links through message which either contain malware or are phishing page. For ex : a text message from your bank asking you to verify your account details by clicking a link. 
+
+  5.  Qushing:- QR code-based phishing. Attacker make fake QR code so that once the target scan the code they are redirected to phishing websites or malware site.
+
+  6. Shoulder Surfing: It is a  attack in which attacker physically spying on someone while they accessing their system to gain sensitive information. For ex : an attacker observing someone type a password on their pin at an ATM. 
+
+  7. Tailgating: it is a social engineering attack. In this attacker exploit human behaviour rather than technical vulnerabilities. 
+
+  8. Piggybacking: It is similar to tailgating but in this victim allow unauthorised person to enter the workplace. For ex : In this attacker impersonate it staff, claiming they need urgent access to server rooms or offices due to technical issues. 
+
+  9. Dumpster Diving: In this attacker search for the sensitive information from the dump disposed by the victim	
+
+ 10. Impersonation: In this an attacker pretend to be an employee or authorised person for the job to enter the victim’s workplace.
+
+ 11. Whaling: It is a phishing attack in which high profile people are attacked like  high level executives or the top management or the CEO. 
+
+ 12. Quid Pro Quo: In this attack the attacker free service  to the victim  in order to gain sensitive information.
+
+- [ ]  13. Baiting: Victim is tempted by giving him malicious software or device. For ex : it includes phishing scams using fraud emails and fake free wifi hotspots to steal login or user credentials.
+- [ ] ￼
+
+ 14. Hoax: In this attack fake or false rumours are spread so that victim panics and get easily targeted.
+
+ 15. Pretexting: Attacker creates a fake scenario so that the victim share the sensitive information. 
+
+ 16. Honeytrap: In this a trap is created for the target in which sexual content or romantic content is created in order to blackmail the target or get their personal inform.
+. Explain the Cyber Kill Chain Methodology.
+
+ It is a framework that helps to understand and stop the cyberattack. It is divided into 7 stages through which strategies are created to prevent attacker to hack/ cyber attack.
+
+ Below are the stages 
+ 
+ 1 Reconnaissance: Gathering information about the target , look for the vulnerabilities. 
+
+ 2 Weaponisation : From the information gathered through recon the next step is to send malicious payload which can be easily delivered to the target.
+
+ 3 Delivery: In this stage the payload created send to the target as emails website link, vulnerable we application or USB drive.  Its also the key to test the defence  mechanism of the target
+
+ 4 Exploitation : Once the weapon is successfully transmitted to the target then it start exploiting the vulnerability by executing the code on the system.
+
+ 5 Installation : Now as the code was executed on the previous stage, more malicious software are installed for maintaining  access and hide presence of malicious activities.
+
+ 6 Command and control : In this stage two way communication b/w the target & controlled server is established to communicate & pass data back and forth.
+
+ 7 Action on objective : Now all the requirements are completed to gain the access of the target & send the data back and forth with hiding the presence is done. The objective of gaining access of the target is completed like data theft, compromising other systems.
+
+Q - What do you understand about Mitre Attack Framework & TTPs? Explain in detail.
+
+   Mitre Attack - For Enterprise a framework that categories the cyber adversary behaviour into tactics and techniques.  Tactics represents the why- the objective of an attack while techniques describe how adversaries achieve those objectives.
+
+   Tactics in attack for Enterprise - These are the main goals adversaries attempt to achieve in an attack
+
+      1.  Reconnaissance: Gathering information about the target before launching an attack.
+      2.  Resource Development: Establishing resource for later use.
+      3. Initial Access: Gaining entry into the target network.
+      4. Execution: Running malicious code on victims system.
+      5.  Persistence : Maintaining access across reboots & changes
+      6. Privilege Escalation: Gaining higher level permission.
+      7. Defence Evasion: Avoiding detection by security tools 
+      8. Credential Access: Stealing users access for further access. 
+      9. Discovery: Learning about the system network & defence.
+      10. Lateral movement: Moving through the network to access more systems.  
+      11. Collection: Gathering data for exfiltration.
+      12. Command and control( C2): Communicating with compromised systems.
+      13. Exfiltration: Stealing & transferring sensitive data 
+      14. Impact: Disrupting, damaging or destroying system & data.
+
+Techniques :- in every tactic  one or more techniques are used, depending on the attackers action.
+
+Example Techniques:
+* Phishing (for Initial Access)
+* Exploitation of Public-Facing Application (for Initial Access)
+* PowerShell (for Execution)
+* Credential Dumping (for Credential Access)
+
+ Procedure :- These are the steps followed by the attacker to implement techniques.
+Q - Describe the Footprinting techniques & types of footprinting along with tools used in it.
+
+A - In footprinting the attacker collect more and more information available about the target from the external source, in order to plan his attack.  The purpose of footprinting is to collect publicly available resources to find vulnerability in the target system.
+
+There are two types of Footprinitng techniques:- 
+
+1. Passive  Footprinting 
+2. Active Footprinting 
+
+1 Passive Footprinting: - In this the attacker collect the information without interacting with the target system /organisation. This is basically done by publicly available sources, social media platforms, website, DNS records, etc.
+
+2 Active Footprinting: - In this the attacker collect the information but directly interacting with the target system/organisation. Techniques like Port scanning, Pinging, Network scanning etc.
+
+Types of Footprinting:
+
+DNS Footprinting: The use of DNS (Domain Name system) is to collect domain records of the targeted system. DNS records like A, MX,NS AND SOA, can provide information about the structure and server of the target system.
+
+Tools Used:
+* dig
+* nslookup
+* DNSdumpster
+
+Network Footprinting: In this Topology, IP address range, and connected devices are discovered of the target system by the attacker.
+
+* Tools Used:
+    * Nmap
+    * Angry IP Scanner
+    * Netcat
+
+Web Footprinting : This technique is used to collect information about website and web application. In this website’s structure, subdomains, web server details, technologies used, etc. are discovered.
+
+Tools Used:
+* Nikto (web server scanner)
+* Burp Suite (for web vulnerability scanning)
+* Wappalyzer (for technology stack identification)
+
+Social Engineering Footprinting: In this attacker user social engineering techniques to collect sensitive information from employees or individual.
+
+Tools Used:
+* Maltego (OSINT tool for social media profiling)
+* theHarvester (for email gathering and social media profiling)
+
+WHOIS Footprinting: Using WHOIS domain registration details are collected, which provide the information domain owner, registrar, and expiration date.Tools Used:
+* WHOIS command
+* Whois.domaintools.com
+
+Footprinting Tools:
+
+Nmap: Network mapping tool is used for system discovery, port scanning, OS detection, and vulnerability scanning
+Netcat: Network utility tool is used for port scanning and banner grabbing.
+Whois: Domain registration details are collected.
+Google Dorks: Google search operators are used to collect sensitive information like email addresses, file types, documents, etc., 
+Maltego: Powerful OSINT (Open Source Intelligence) tool helps in collecting the social media profiling, network analysis, and domain information collect 
+Traceroute: Network path tracing tool is used to collect information of network devices and routers 
+
+Google Dorking, also known as Google hacking, involves using advanced search operators in Google to find specific types of information that aren't easily accessible or intended to be found by regular search queries. Below are 15 Google Dorking operators along with their descriptions:
+
+1. site:
+* Use: Restricts search results to a specific website or domain.
+* Example: site:example.com – Finds pages only within the "example.com" domain.
+
+
+2. inurl:
+* Use: Searches for a specific term in the URL of a webpage.
+* Example: inurl:login – Finds pages with the word "login" in the URL.
+
+
+3. intitle:
+* Use: Searches for a specific term in the title of a webpage.
+* Example: intitle:"admin panel" – Finds pages with "admin panel" in the title.
+
+
+4. intext:
+* Use: Searches for a specific term in the body of a webpage.
+* Example: intext:"confidential" – Finds pages with the word "confidential" in the content.
+
+
+5. filetype:
+* Use: Limits the search results to a specific file type (e.g., PDF, DOCX, etc.).
+* Example: filetype:pdf – Finds PDF documents.
+
+
+6. link:
+* Use: Finds pages that link to a specific URL.
+* Example: link:example.com – Finds pages linking to "example.com".
+
+* 7. cache:
+* Use: Shows the cached version of a webpage.
+* Example: cache:example.com – Shows the cached version of "example.com".
+
+
+8. allinurl:
+* Use: Searches for all terms in the URL.
+* Example: allinurl:admin login – Finds URLs containing both "admin" and "login".
+
+
+9. allintitle:
+* Use: Searches for all terms in the title.
+* Example: allintitle:"secure admin login" – Finds pages with all three words in the title.
+
+
+10. allintext:
+* Use: Searches for all terms in the page text.
+* Example: allintext:"user password reset" – Finds pages containing "user" and "password" and "reset".
+
+
+11. allinanchor:
+* Use: Searches for terms in the anchor text (the clickable text in links).
+* Example: allinanchor:"click here" – Finds pages with anchor text "click here".
+
+
+12. define:
+* Use: Provides the definition of a word.
+* Example: define:algorithm – Shows the definition of the word "algorithm."
+
+
+13. before: and after:
+* Use: Filters search results by date, restricting results to before or after a specific date.
+* Example: after:2023-01-01 – Finds results published after January 1, 2023.
+
+
+14. numrange:
+* Use: Searches for numbers within a specific range.
+* Example: $100..$500 – Finds pages mentioning prices between $100 and $500.
+
+
+15. AROUND(X)
+* Use: Finds pages where two words are within X words of each other.
+* Example: "login" AROUND(5) "password"– Finds pages where "login" and "password" appear within 5 words of each other
